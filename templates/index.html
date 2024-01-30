@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume Screening App</title>
-    <link rel="stylesheet"  href="{{ url_for('static', filename='style.css') }}" />
+    <title>Job Reccomendation System</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
 </head>
 <body>
-    <h1>Resume Screening App</h1>
+    <h1 style="margin-bottom: -30px;">Job Reccomendation System</h1>
+    <h3 style="font-weight:300;margin-bottom: 10px;">Explain Yourself</h3>
     <div class="form__group field">
         <form action="/predict" method="post">
         <textarea class="form__field" placeholder="Name" name="resume_text" id='name' rows="10" cols="50" required autofocus></textarea><br>

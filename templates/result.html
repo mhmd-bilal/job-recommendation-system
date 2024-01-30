@@ -4,9 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prediction Result</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+
 </head>
 <body>
-    <h2>Predicted Category:</h2>
-    <p>{{ category_name }}</p>
+    <div class="form__group field" style="text-align: center;">
+        <h2>Predicted Category:</h2>
+        <p>{{ category_name }}</p><br><br>
+        <button class="submit_button" style="width: 20%;" type="button" onclick="history.back()">Back</button>
+    </div>
 </body>
 </html>
